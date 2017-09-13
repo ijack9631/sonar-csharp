@@ -4,4 +4,6 @@
 # https://help.github.com/articles/about-codeowners/
 
 # These owners will be the default owners for everything in the repo.
+# NOTE: the new line ending in this file must be LF, not CRLF!
+
 * @SonarSource/dotnet @evangelink @valhristov @michalb-sonar @duncanp-sonar
