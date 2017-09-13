@@ -1,0 +1,36 @@
+# Explanation of line ending settings:
+# http://www.davidlaing.com/2012/09/19/customise-your-gitattributes-to-become-a-git-ninja/
+# http://adaptivepatchwork.com/2012/03/01/mind-the-end-of-your-line/
+# https://help.github.com/articles/dealing-with-line-endings/
+# https://stackoverflow.com/questions/3206843/how-line-ending-conversions-work-with-git-core-autocrlf-between-different-operat
+
+# Set the default behavior, in case people don't have core.autocrlf set.
+* text=auto
+
+# Explicitly declare text files you want to always be normalized when writing (converted to LF) and converted
+# to native line endings on checkout.
+*.cs      text diff=csharp
+*.xaml    text
+*.csproj  text
+*.sln     text
+*.tt      text
+*.ps1     text
+*.cmd     text
+*.msbuild text
+*.md      text
+*.bat     text
+*.config  text
+*.css     text
+*.xml     text
+
+# Declare files that will always have CRLF line endings on checkout.
+*.sln text eol=crlf
+
+# Denote all files that are truly binary and should not be modified.
+*.png     binary
+*.jepg    binary
+*.sdf     binary
+*.ico     binary
+
+# if the file is not on the list, git will use heuristic to determine whether the file is text or binary
+
